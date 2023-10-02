@@ -4,7 +4,7 @@ const setCors = require('./utils/setCors')
 
 const graphQLOptions = {
   // Set the path for the GraphQL server
-  baseEndpoint: '/',
+  baseEndpoint: '/@',
 
   // Set the path for the GraphQL playground
   // This option can be removed to disable the playground route
@@ -14,7 +14,7 @@ const graphQLOptions = {
   forwardUnmatchedRequestsToOrigin: false,
 
   // Enable debug mode to return script errors directly in browser
-  debug: false,
+  debug: true,
 
   // Enable CORS headers on GraphQL requests
   // Set to `true` for defaults (see `utils/setCors`),
